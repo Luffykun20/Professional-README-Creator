@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 
-const { default: inquirer } = require("inquirer");
+const inquirer = require("inquirer");
+const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -14,17 +15,17 @@ const questions = [
 {
     type: 'input',
     name: 'description',
-    message: 'what is the project description?',
+    message: 'Describe your project',
 },
 {
     type: 'input',
-    name: 'Table of content',
-    message: 'what is the table of content of the project?'
+    name: 'table',
+    message: 'what are the contents in the Readme.md '
 },
 {
     type: 'input',
     name: 'installation',
-    message: 'what is the project installation instructions?',
+    message: 'what are the installation instructions for the project?',
 
 },
 {
@@ -35,41 +36,88 @@ const questions = [
 },
 {
     type: 'input',
-    name: 'contribution',
-    message : 'what is the project contributions?',
+    name: 'contributing',
+    message : 'Sponsors or Contributors on the project?',
 
 },
 {
     type: 'input',
     name: 'test',
-    message: 'what is the project test instructions '
+    message: 'what are the project test instructions? '
 },
 {
     type: 'list',
     name: 'license',
-    message: 'what is the project License ',
-    choices: ["Apache","Boost","GNU","MIT"],
+    message: 'what license are you using?',
+    choices: ["Apache", "Boost", "GNU", "MIT"],
 
 },
 {
     type: 'input',
-    name: 'Github',
-    message: 'Enter your Github username',
+    name: 'contact1',
+    message: 'What is your Github username?',
 
 },
 {
     type: 'input',
-    name: 'email',
-    message: 'Enter your email'
+    name: 'contact2',
+    message: 'What is your email address?',
 }
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile ({name, description,  installation, usage, contributing, test, license, contact1, contact2}){
+    return  `# ${name}
+
+## Description
+
+${description}
+    
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+    
+${installation}
+
+## Usage
+    
+${usage}
+    
+## Credits
+    
+${contributing}
+
+##Tests
+
+${test}
+## License
+        
+${license}
+    
+## Badges
+    
+![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+    
+Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+    
+## Contact me
+
+-https://github.com/${contact1}
+-You can also can contact me to ${contact2} if you have any question.
+`
+};
+
+
 
 // TODO: Create a function to initialize app
-function init() {
+function init(){
     inquirer.prompt(questions).then(responds =>{
+        fs.writeFileSync("README.md", writeToFile(responds))
 
     })
 }
