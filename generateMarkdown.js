@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Function that returns license badge based on user choice
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === 'No License') {
@@ -19,7 +19,7 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
+// Function that returns the license website link based on user choice
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'No License') {
@@ -41,7 +41,7 @@ function renderLicenseLink(license) {
 
 }
 
-// TODO: Create a function that returns the license section of README
+// Function that returns the license copyright section based on user choice 
 // If there is no license, return an empty string
 function renderLicenseSection(license, year, holder) {
   if (license === 'No License') {
@@ -121,7 +121,7 @@ function renderLicenseSection(license, year, holder) {
 
 
 
-// TODO: Create a function to generate markdown for README
+// Function that generates the markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 
@@ -152,12 +152,12 @@ ${data.usage}
 
 ${data.contributionGuidelines ? 
   `
-  # Contributing
+  ## Contributing
 
   ${data.contributionGuidelines}
   ` :
   `
-  # Contributing
+  ## Contributing
 
   Thanks! But I am not accepting foreign contributions at the moment.`
 }

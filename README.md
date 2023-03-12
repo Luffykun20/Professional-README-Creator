@@ -4,7 +4,7 @@
   
 ## Description
 
-This Command line application generates a professional README file based on the user's answers to the prompts. This application quickly creates a README for developers' projects, which allows them to spend more time on the application itself. It works by taking the user's inputs, and creating a README using markdown language.
+This Command line application dynamically generates a professional README file based on the user's answers to the prompted questions. This command line application quickly creates a README file for developers' projects, which allows them to spend more on other fields of the project. It works by taking the user's inputs, and creating a README file  using markdown language.
     
 ## Table of Contents
 
@@ -18,11 +18,13 @@ This Command line application generates a professional README file based on the 
 
 ## Installation
     
-To install this application, clone the repository's code, open it in VS Code, open the terminal, change your directory to "Develop," and run the following command: "node index.js"
+To install this application, clone the repository's code, open it in VS Code, open the terminal of your preference,  and run the following command: "node index.js"
 
 ## Usage
     
-To use this application, open VS Code, open the terminal, change your directory to "Develop," enter the command "node index.js" and answer the prompts.
+To use this application, open VS Code, open the terminal of your preference, enter the command "node index.js" and answer the prompted questions.
+
+The following video link demostrates the steps four using this application: 
     
 
 
