@@ -2,11 +2,11 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
   
-## [Description](#table-of-content)
+## [Description](#table-of-contents)
 
 This Command line application dynamically generates a professional README file based on the user's answers to the prompted questions. This command line application quickly creates a README file for developers' projects, which allows them to spend more on other fields of the project. It works by taking the user's inputs, and creating a README file  using markdown language.
     
-## [Table of Contents](#table-of-content)
+## [Table of Contents](#table-of-contents)
 
 - [Description](#description)
 - [Installation](#installation)
@@ -16,11 +16,11 @@ This Command line application dynamically generates a professional README file b
 - [License](#license)
 - [Questions](#questions)
 
-## [Installation](#table-of-content)
+## [Installation](#table-of-contents)
     
 To install this application, clone the repository's code, open it in VS Code, open the terminal of your preference,  and run the following command: "node index.js"
 
-## [Usage](#table-of-content)
+## [Usage](#table-of-contents)
     
 To use this application, open VS Code, open the terminal of your preference, enter the command "node index.js" and answer the prompted questions.
 
@@ -28,15 +28,15 @@ The following video link demostrates the steps four using this application:
     
 
 
-  ## [Contributing](#table-of-content)
+  ## [Contributing](#table-of-contents)
 
   Thanks! But I am not accepting foreign contributions at the moment.
 
-## [Test](#table-of-content)
+## [Test](#table-of-contents)
 
 N/A
 
-## [License](#table-of-content)
+## [License](#table-of-contents)
 
 
     Copyright (C) 2023 Cristhian Bustamante
@@ -49,7 +49,7 @@ N/A
    
    https://opensource.org/licenses/MIT
         
-## [Questions](#table-of-content)
+## [Questions](#table-of-contents)
 
 - You can reach me through https://github.com/Luffykun20
 - Also, you can contact me through my e-mail: [cristhian_georgia_20@hotmail.com](mailto:cristhian_georgia_20@hotmail.com) if you have any question.
