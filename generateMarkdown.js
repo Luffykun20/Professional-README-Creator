@@ -127,11 +127,11 @@ function generateMarkdown(data) {
 
 ${renderLicenseBadge(data.license)}  
   
-## Description
+## [Description](#table-of-content)
 
 ${data.description}
     
-## Table of Contents
+## [Table of Contents](#table-of-content)
 
 - [Description](#description)
 - [Installation](#installation)
@@ -141,37 +141,38 @@ ${data.description}
 - [License](#license)
 - [Questions](#questions)
 
-## Installation
+## [Installation](#table-of-content)
     
 ${data.installation}
 
-## Usage
+## [Usage](#table-of-content)
     
 ${data.usage}
     
 
 ${data.contributionGuidelines ? 
   `
-  ## Contributing
+  ## [Contributing](#table-of-content)
 
   ${data.contributionGuidelines}
   ` :
   `
-  ## Contributing
+  ## [Contributing](#table-of-content)
 
   Thanks! But I am not accepting foreign contributions at the moment.`
 }
 
-## Test
+## [Test](#table-of-content)
 
 ${data.test}
 
-## License
+## [License](#table-of-content)
 
-${renderLicenseSection(data.license, data.year, data.holder)}        
+${renderLicenseSection(data.license, data.year, data.holder)}
+      
 ${renderLicenseLink(data.license)}
         
-## Questions
+## [Questions](#table-of-content)
 
 - You can reach me through https://github.com/${data.contact1}
 - Also, you can contact me through my e-mail: [${data.contact2}](mailto:${data.contact2}) if you have any question.
