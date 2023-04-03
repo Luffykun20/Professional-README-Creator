@@ -4,7 +4,7 @@
   
 ## [Description](#table-of-contents)
 
-This Command line application dynamically generates a professional README file based on the user's answers to the prompted questions. This command line application quickly creates a README file for developers' projects, which allows them to spend more on other fields of the project. It works by taking the user's inputs, and creating a README file  using markdown language.
+This Command line application dynamically generates a professional README file based on the user's answers to the prompted questions. This command line application quickly creates a README file for developers' projects, which allows them to spend more time on other fields of the project. It works by taking the user's inputs, and creating a README file  using markdown language.
     
 ## [Table of Contents](#table-of-contents)
 
